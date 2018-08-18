@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:id="@+id/activity_main"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+
+tools:context="com.example.tornado.databaseexample4.MainActivity"
+android:background="#c7e5f4">
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="40dp"
+        android:layout_marginLeft="40dp"
+        android:hint="enter name"
+        android:textStyle="bold|italic"
+        android:id="@+id/edtName"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_below="@+id/edtName"
+        android:hint="enter password"
+        android:textStyle="bold|italic"
+        android:id="@+id/edtPassword"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_below="@+id/edtPassword"
+        android:hint="enter age"
+        android:textStyle="bold|italic"
+        android:id="@+id/edtAge"
+        />
+
+    <Button
+        android:id="@+id/btn_view_data"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+
+        android:layout_alignBaseline="@+id/btn_add_user"
+        android:layout_alignBottom="@+id/btn_add_user"
+        android:layout_alignLeft="@+id/edtAge"
+        android:layout_alignStart="@+id/edtAge"
+        android:text="view_data"
+        android:onClick="viewdata"
+        android:textStyle="bold|italic" />
+
+    <Button
+        android:id="@+id/btn_add_user"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_alignEnd="@+id/edtAge"
+        android:layout_alignRight="@+id/edtAge"
+        android:layout_below="@+id/edtAge"
+        android:layout_marginTop="21dp"
+        android:text="add_user"
+        android:onClick="addUser"
+        android:textStyle="bold|italic" />
+
+    <EditText
+        android:id="@+id/edt_currentName"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/btn_view_data"
+        android:layout_marginLeft="21dp"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="39dp"
+        android:hint="current name"
+        android:textStyle="bold|italic" />
+
+    <Button
+
+        android:id="@+id/btn_update"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_alignLeft="@+id/btn_add_user"
+        android:layout_alignStart="@+id/btn_add_user"
+        android:layout_below="@+id/edt_currentName"
+        android:text="update"
+        android:onClick="update"
+        android:textStyle="bold|italic" />
+
+    <EditText
+        android:id="@+id/edt_new_name"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/edt_currentName"
+        android:layout_alignStart="@+id/edt_currentName"
+        android:layout_below="@+id/btn_update"
+        android:hint="current name"
+        android:textStyle="bold|italic" />
+
+    <EditText
+        android:id="@+id/edt_delet"
+        android:layout_width="210dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/edt_new_name"
+        android:layout_alignStart="@+id/edt_new_name"
+        android:layout_below="@+id/edt_new_name"
+        android:layout_marginTop="30dp"
+        android:hint="enter name to delete"
+        android:textStyle="bold|italic" />
+
+    <Button
+        android:id="@+id/btn_delete"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_alignBottom="@+id/edt_delet"
+        android:layout_alignEnd="@+id/btn_add_user"
+        android:layout_alignRight="@+id/btn_add_user"
+        android:text="delete"
+        android:onClick="delete"
+        android:textStyle="bold|italic"/>
+    <Button
+        android:id="@+id/btn_next"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+
+        android:text="next"
+        android:onClick="next"
+        android:layout_below="@+id/btn_delete"
+        android:textStyle="bold|italic"/>
+</RelativeLayout>
